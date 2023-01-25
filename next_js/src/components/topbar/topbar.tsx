@@ -4,7 +4,7 @@ import logo from "../../../public/logo.png";
 import { HiHome, HiUser, HiCreditCard } from "react-icons/hi";
 import { useRouter } from "next/router";
 import Link from "next/link";
-function Topbar(props: any) {
+function SideBar(props: any) {
   const { setShowNav, showNav } = props;
   const router = useRouter();
   return (
@@ -70,4 +70,4 @@ function Topbar(props: any) {
   );
 }
 
-export default Topbar;
+export default SideBar;

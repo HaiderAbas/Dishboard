@@ -1,8 +1,7 @@
-import Topbar from "@/components/topbar/topbar";
 import { Inter } from "@next/font/google";
-import { Fragment, useEffect, useState } from "react";
-import { Transition } from "@headlessui/react";
+import { useEffect, useState } from "react";
 import Sidebar from "@/components/sidebar/sidebar";
+import SideBar from "@/components/topbar/topbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +29,7 @@ export default function Home({ children }: any) {
   });
   return (
     <>
-      <Topbar showNav={showNav} setShowNav={setShowNav} />
+      <SideBar showNav={showNav} setShowNav={setShowNav} />
       <div
       // className="translate-x-0 transform transition duration-[400ms] endf -translate-x-full"
       // enter="transform transition duration-[400ms]"
